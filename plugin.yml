@@ -1,0 +1,9 @@
+name: QeiwtPet
+version: 1.0
+main: com.qeiwt.qeiwtpet.QeiwtPet
+api-version: '1.21'
+author: qeiwt
+commands:
+  qeiwtpet:
+    description: Main command for QeiwtPet
+    aliases: [qpet]

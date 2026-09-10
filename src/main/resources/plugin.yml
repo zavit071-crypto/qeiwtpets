@@ -1,0 +1,11 @@
+name: qeiwtpets
+version: 1.0.0
+main: com.qeiwt.qeiwtpets.QeiwtPets
+api-version: '1.21'
+author: qeiwt
+description: A custom pets plugin created by qeiwt.
+commands:
+  qeiwtpets:
+    description: Main command for QeiwtPets
+    permission: qeiwtpets.admin
+    aliases: [qpet, qpets]

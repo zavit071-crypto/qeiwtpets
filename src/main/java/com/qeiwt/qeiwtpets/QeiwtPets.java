@@ -10,15 +10,11 @@ public final class QeiwtPets extends JavaPlugin implements CommandExecutor {
 
     @Override
     public void onEnable() {
-        // រក្សាទុក config.yml ដើម
         saveDefaultConfig();
-        
-        // ចុះឈ្មោះ Command ឈ្មោះ qeiwtpets
         if (getCommand("qeiwtpets") != null) {
             getCommand("qeiwtpets").setExecutor(this);
         }
-        
-        getLogger().info("QeiwtPets has been enabled successfully! Made by qeiwt.");
+        getLogger().info("QeiwtPets has been enabled successfully!");
     }
 
     @Override
@@ -29,7 +25,7 @@ public final class QeiwtPets extends JavaPlugin implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("qeiwtpets")) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', " &#d977c2[QeiwtPets] &fRunning version 1.0.0 made by qeiwt."));
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', " &#d977c2[QeiwtPets] &fRunning version 1.0.0."));
             return true;
         }
         return false;
